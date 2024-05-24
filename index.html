@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employees</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/side-head.css" />
+    <link rel="stylesheet" href="./css/employees.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Side Menu -->
+      <aside class="sidebar">
+        <div class="companyId">
+          <img class="logo" src="./images/logo.svg" alt="company logo" />
+          <h1 class="companyName">
+            A<span class="e-color">e</span>rt<span class="e-color">e</span>n
+          </h1>
+        </div>
+        <nav>
+          <ul>
+            <li class="mList">
+              <img src="./images/dashboard-icon.svg" alt="" />
+              <p>Dashboard</p>
+            </li>
+            <li class="mList">
+              <img src="./images/roles-case.svg" alt="" />
+              <p>Roles</p>
+            </li>
+            <li class="mList active">
+              <img src="./images/employees-icon.svg" alt="" />
+              <p>Employees</p>
+              <img class="arrowDown" src="./images/arrow-down.svg" alt="" />
+            </li>
+            <ul class="employeeSub">
+              <li class="allEmpText">
+                <img src="./images/All Employees_Dot.svg" alt="" />
+                <p>All Employees</p>
+              </li>
+              <li>
+                <img src="./images/Recent hires_Dot.svg" alt="" />
+                <p>Recent Hires</p>
+              </li>
+            </ul>
+            <li class="mList">
+              <img src="./images/payrol-icon.svg" alt="" />
+              <p>Payroll</p>
+            </li>
+            <li class="mList">
+              <img src="./images/reports-icon.svg" alt="" />
+              <p>Reports</p>
+            </li>
+            <li class="mList">
+              <img src="./images/settings-icon.svg" alt="" />
+              <p>Settings</p>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <!-- User and Search -->
+        <header>
+          <div class="search">
+            <img src="./images/search-icon.png" alt="" />
+            <input type="text" placeholder="Search anything here" />
+          </div>
+          <div class="user-profile">
+            <img
+              class="userInfo"
+              src="./images/screwed-settings-icon.svg"
+              alt=""
+            />
+            <img class="userInfo" src="./images/bell-icon.svg" alt="" />
+            <img class="userDP" src="./images/user-main-icon.png" alt="" />
+          </div>
+        </header>
+
+        <!-- Content intro -->
+        <div class="content">
+          <div class="header">
+            <p class="conHeaderTxt">Employees</p>
+            <img src="./images/Help icon.svg" alt="" />
+            <p class="pTxt">100</p>
+          </div>
+          <div class="buttons">
+            <button class="btn">
+              <img src="./images/export-icon.svg" alt="" /> Export
+            </button>
+            <button class="btn btn-primary">
+              <img src="./images/new-employee-icon.svg" alt="" /> New Employee
+            </button>
+          </div>
+        </div>
+
+        <!-- Company Category  -->
+        <div class="comCategory">
+          <div class="allCat">
+            <p class="pCategory allEmployee">All Employees</p>
+            <p class="pCategory">Teams</p>
+            <p class="pCategory">Roless</p>
+          </div>
+          <hr class="hr" />
+        </div>
+
+        <!-- Employee Search and Filter -->
+        <div class="filterApp">
+          <div class="searchFilter">
+            <img src="./images/search-icon.png" alt="" />
+            <input
+              type="text"
+              placeholder="Search Employee by name, role, ID or any related keywords"
+            />
+          </div>
+          <div class="buttons">
+            <button class="btn">
+              <img src="./images/filter-icon.svg" alt="" />Filter
+            </button>
+            <button class="btn btn-primary">
+              <img src="./images/list-icon-no-color.svg" alt="" />
+            </button>
+            <button class="btn grid">
+              <img src="./images/grid-icon.svg" alt="" />
+            </button>
+          </div>
+        </div>
+
+        <!-- Employees Table -->
+        <div class="table">
+          <table>
+            <!-- Table Head -->
+            <thead>
+              <tr class="table-row head">
+                <th class="first table-head">
+                  <div class="name-check">
+                    <input type="checkbox" name="example" value="1" />
+                    <p>Name</p>
+                  </div>
+                </th>
+                <th>Employee ID</th>
+                <th class="table-head">
+                  <div class="role-help">
+                    <p>Role</p>
+                    <img src="./images/Help icon.svg" alt="" />
+                  </div>
+                </th>
+                <th><p>Status</p></th>
+                <th class="last">Teams</th>
+              </tr>
+            </thead>
+
+            <!-- Table Body -->
+            <tbody>
+              <!-- Entry 1 -->
+              <tr class="table-row">
+                <td class="table-cell">
+                  <div class="name">
+                    <input type="checkbox" name="example" value="1" />
+                    <img class="userimg img1" src="./images/1tf.svg" alt="" />
+                    <div class="userDetails">
+                      <p class="username">Tanner Finsha</p>
+                      <p class="email">@Tannerfisher@gmail.com</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="table-cell emId">
+                  <p class="id">#23454GH6JY76</p>
+                </td>
+                <td class="table-cell">
+                  <div class="role">
+                    <p class="title">Product Designer</p>
+                    <p class="type">Full time</p>
+                  </div>
+                </td>
+                <td class="table-cell status">
+                  <div class="active">
+                    <img src="./images/green-circle-active.svg" alt="" />
+                    <p>Active</p>
+                  </div>
+                </td>
+                <td class="table-cell">
+                  <div class="teams">
+                    <p class="mpe">Marketing</p>
+                    <p class="design">Design</p>
+                    <p class="number">+1</p>
+                    <img
+                      class="dots"
+                      src="./images/vertical-dots-active.svg"
+                      alt=""
+                    />
+                  </div>
+                </td>
+              </tr>
+
+              <!-- Entry 2 -->
+              <tr class="table-row">
+                <td class="table-cell">
+                  <div class="name">
+                    <input type="checkbox" name="example" value="1" />
+                    <img class="userimg img1" src="./images/2ew.svg" alt="" />
+                    <div class="userDetails">
+                      <p class="username">Emeto Winner</p>
+                      <p class="email">Emetowinner@gmail.com</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="table-cell emId">
+                  <p class="id">#23454GH6JY76</p>
+                </td>
+                <td class="table-cell">
+                  <div class="role">
+                    <p class="title">Product Designer</p>
+                    <p class="type">Contract</p>
+                  </div>
+                </td>
+                <td class="table-cell status">
+                  <div class="active">
+                    <img src="./images/green-circle-active.svg" alt="" />
+                    <p>Active</p>
+                  </div>
+                </td>
+                <td class="table-cell">
+                  <div class="teams">
+                    <p class="mpe">Product</p>
+                    <p class="design">Design</p>
+                    <p class="number">+1</p>
+                    <img
+                      class="dots"
+                      src="./images/vertical-dots-active.svg"
+                      alt=""
+                    />
+                  </div>
+                </td>
+              </tr>
+
+              <!-- Entry 3 -->
+              <tr class="table-row">
+                <td class="table-cell">
+                  <div class="name">
+                    <input type="checkbox" name="example" value="1" />
+                    <img class="userimg img1" src="./images/3to.svg" alt="" />
+                    <div class="userDetails">
+                      <p class="username">Tassy Omah</p>
+                      <p class="email">Tassyomah@gmail.com</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="table-cell emId">
+                  <p class="id">#23454GH6JY76</p>
+                </td>
+                <td class="table-cell">
+                  <div class="role">
+                    <p class="title">Product Designer</p>
+                    <p class="type">Associate</p>
+                  </div>
+                </td>
+                <td class="table-cell status">
+                  <div class="inactive">
+                    <img src="./images/red-circle-inactive.svg" alt="" />
+                    <p>Inactive</p>
+                  </div>
+                </td>
+                <td class="table-cell">
+                  <div class="teams">
+                    <p class="mpe">Product</p>
+                    <!-- <p class="design">Design</p> -->
+                    <!-- <p class="number">+1</p> -->
+                    <img
+                      class="dots"
+                      src="./images/vertical-dots-inactive.svg"
+                      alt=""
+                    />
+                  </div>
+                </td>
+              </tr>
+
+              <!-- Entry 4 -->
+              <tr class="table-row">
+                <td class="table-cell">
+                  <div class="name">
+                    <input type="checkbox" name="example" value="1" />
+                    <img class="userimg img1" src="./images/4jm.svg" alt="" />
+                    <div class="userDetails">
+                      <p class="username">James Muriel</p>
+                      <p class="email">JamesMuriel@Aerten.finance</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="table-cell emId">
+                  <p class="id">#23454GH6JY76</p>
+                </td>
+                <td class="table-cell">
+                  <div class="role">
+                    <p class="title">Product Designer</p>
+                    <p class="type">Full time</p>
+                  </div>
+                </td>
+                <td class="table-cell status">
+                  <div class="inactive">
+                    <img src="./images/red-circle-inactive.svg" alt="" />
+                    <p>Inactive</p>
+                  </div>
+                </td>
+                <td class="table-cell">
+                  <div class="teams">
+                    <p class="mpe">Engineering</p>
+                    <p class="design">Design</p>
+                    <!-- <p class="number">+1</p> -->
+                    <img
+                      class="dots"
+                      src="./images/vertical-dots-inactive.svg"
+                      alt=""
+                    />
+                  </div>
+                </td>
+              </tr>
+
+              <!-- Entry 5 -->
+              <tr class="table-row">
+                <td class="table-cell">
+                  <div class="name">
+                    <input type="checkbox" name="example" value="1" />
+                    <img class="userimg img1" src="./images/5ew.svg" alt="" />
+                    <div class="userDetails">
+                      <p class="username">Emeto Winner</p>
+                      <p class="email">Emetowinner@gmail.com</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="table-cell emId">
+                  <p class="id">#23454GH6JY76</p>
+                </td>
+                <td class="table-cell">
+                  <div class="role">
+                    <p class="title">Frontend Engineer</p>
+                    <p class="type">Full time</p>
+                  </div>
+                </td>
+                <td class="table-cell status">
+                  <div class="inactive">
+                    <img src="./images/red-circle-inactive.svg" alt="" />
+                    <p>Inactive</p>
+                  </div>
+                </td>
+                <td class="table-cell">
+                  <div class="teams">
+                    <p class="mpe">Product</p>
+                    <p class="design">Design</p>
+                    <p class="number">+3</p>
+                    <img
+                      class="dots"
+                      src="./images/vertical-dots-inactive.svg"
+                      alt=""
+                    />
+                  </div>
+                </td>
+              </tr>
+
+              <!-- Entry 6 -->
+              <tr class="table-row">
+                <td class="table-cell">
+                  <div class="name">
+                    <input type="checkbox" name="example" value="1" />
+                    <img class="userimg img1" src="./images/6to.svg" alt="" />
+                    <div class="userDetails">
+                      <p class="username">Tassy Omah</p>
+                      <p class="email">Tassyomah@gmail.com</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="table-cell emId">
+                  <p class="id">#23454GH6JY76</p>
+                </td>
+                <td class="table-cell">
+                  <div class="role">
+                    <p class="title">Backend Engineer</p>
+                    <p class="type">Part time</p>
+                  </div>
+                </td>
+                <td class="table-cell status">
+                  <div class="active">
+                    <img src="./images/green-circle-active.svg" alt="" />
+                    <p>Active</p>
+                  </div>
+                </td>
+                <td class="table-cell">
+                  <div class="teams">
+                    <p class="mpe">Engineering</p>
+                    <p class="design">Design</p>
+                    <!-- <p class="number">+1</p> -->
+                    <img
+                      class="dots"
+                      src="./images/vertical-dots-active.svg"
+                      alt=""
+                    />
+                  </div>
+                </td>
+              </tr>
+
+              <!-- Entry 7 -->
+              <tr class="table-row">
+                <td class="table-cell">
+                  <div class="name">
+                    <input type="checkbox" name="example" value="1" />
+                    <img class="userimg img1" src="./images/7jm.svg" alt="" />
+                    <div class="userDetails">
+                      <p class="username">James Muriel</p>
+                      <p class="email">JamesMuriel@Aerten.finance</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="table-cell emId">
+                  <p class="id">#23454GH6JY76</p>
+                </td>
+                <td class="table-cell">
+                  <div class="role">
+                    <p class="title">Backend Engineer</p>
+                    <p class="type">Part time</p>
+                  </div>
+                </td>
+                <td class="table-cell status">
+                  <div class="active">
+                    <img src="./images/green-circle-active.svg" alt="" />
+                    <p>Active</p>
+                  </div>
+                </td>
+                <td class="table-cell">
+                  <div class="teams">
+                    <p class="mpe">Product</p>
+                    <p class="design">Design</p>
+                    <p class="number">+6</p>
+                    <img
+                      class="dots"
+                      src="./images/vertical-dots-active.svg"
+                      alt=""
+                    />
+                  </div>
+                </td>
+              </tr>
+
+              <!-- Entry 8 -->
+              <tr class="table-row">
+                <td class="table-cell">
+                  <div class="name">
+                    <input type="checkbox" name="example" value="1" />
+                    <img class="userimg img1" src="./images/8ew.svg" alt="" />
+                    <div class="userDetails">
+                      <p class="username">Emeto Winner</p>
+                      <p class="email">Emetowinner@gmail.com</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="table-cell emId">
+                  <p class="id">#23454GH6JY76</p>
+                </td>
+                <td class="table-cell">
+                  <div class="role">
+                    <p class="title">Sales specialist</p>
+                    <p class="type">Part time</p>
+                  </div>
+                </td>
+                <td class="table-cell status">
+                  <div class="inactive">
+                    <img src="./images/red-circle-inactive.svg" alt="" />
+                    <p>Inactive</p>
+                  </div>
+                </td>
+                <td class="table-cell">
+                  <div class="teams">
+                    <p class="mpe">Product</p>
+                    <p class="design">Design</p>
+                    <p class="number">+4</p>
+                    <img
+                      class="dots"
+                      src="./images/vertical-dots-inactive.svg"
+                      alt=""
+                    />
+                  </div>
+                </td>
+              </tr>
+              <!-- Entry End -->
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination">
+          <button class="previous"><img src="./images/arrow-left.svg" alt=""><p>Previous</p></button>
+          <div class="numbering">
+            <span class="active">1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>...</span>
+            <span>8</span>
+            <span>9</span>
+            <span>10</span>
+          </div>
+          <button class="next"><p>Next</p><img src="./images/arrow-right.svg" alt=""></button>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

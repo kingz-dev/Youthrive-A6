@@ -1,0 +1,266 @@
+/* Employees Table */
+.table {
+  margin: 0px 50px 0px 50px;
+  background-color: #fff;
+  /* border: 1px solid #ddd; */
+}
+
+.table table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+
+.table table thead {
+  /* padding-left: 50px; */
+  border-bottom: none;
+  font-size: 12px;
+  font-weight: 500;
+  color: #42526d;
+  line-height: 18px;
+  background-color: #fafbfb;
+  /* border: 1px solid #ddd; */
+}
+
+.table table thead .first {
+  border-radius: 10px 0px 0px 0px;
+}
+.table table thead .last {
+  border-radius: 0px 10px 0px 0px;
+}
+
+.table table thead th {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #eff1f4;
+}
+
+.table table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.table table tbody {
+  border-left: 1px solid #eff1f4;
+  border-right: 1px solid #eff1f4;
+}
+
+.table table tbody td {
+  padding: 15px 10px;
+  /* border-left: 1px solid #eff1f4; */
+  border-bottom: 1px solid #eff1f4;
+}
+
+.table-head .name-check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.table-head .role-help {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+input[type="checkbox"] {
+  /* display: none; */
+  /* min-width: 50px; */
+  /* border: none; */
+  border: 1px solid #eff1f4;
+}
+
+/* Name column */
+.table-cell .name {
+  display: flex;
+  gap: 0px;
+  align-items: center;
+  justify-content: space-between;
+}
+/* .name .userDetails {
+  margin-left: -20px;
+} */
+.name .userDetails .username {
+  color: #101828;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.name .userDetails .email {
+  color: #6b788e;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+/* Employee ID Column */
+.table-cell .emId {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.emId .id {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #091e42;
+  background-color: #f5f6f7;
+  border-radius: 16px;
+  padding: 2px 10px;
+  width: 110px;
+}
+/* Role Column */
+.table-cell .role {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  /* align-items: center; */
+  /* justify-content: space-between; */
+}
+
+div .title {
+  color: #42526d;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+div .type {
+  color: #8993a4;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+/* Status Column */
+.status div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  /* padding: 2px, 8px, 2px, 6px; */
+  padding: 2px, 10px;
+  border-radius: 16px;
+}
+
+.status .active {
+  width: 65px;
+  height: 22px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  background-color: #ecfdf3;
+  color: #027a48;
+}
+
+.status .inactive {
+  width: 74px;
+  height: 22px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  background-color: #fff2ea;
+  color: #f15046;
+}
+
+/* Teams Column */
+.table-cell .teams {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 5px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+div .mpe {
+  color: #091e42;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  padding: 2px 8px;
+  border-radius: 16px;
+  background-color: #f5f6f7;
+}
+
+div .design {
+  color: #6a1039;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  padding: 2px 8px;
+  border-radius: 16px;
+  background-color: #f7e8ef;
+}
+
+div .number {
+  color: #344054;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  padding: 2px 8px;
+  border-radius: 16px;
+  background-color: #f5f6f7;
+}
+
+div .dots {
+  margin-left: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 10px 30px 10px;
+  margin: 0px 50px 30px 50px;
+  border: 1px solid #eff1f4;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.pagination button {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 8px 14px;
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+  background-color: #fff;
+  cursor: pointer;
+  box-shadow: 0px 1px 2px 0px #1018280d;
+}
+
+.pagination .previous {
+  width: 114px;
+  height: 36px;
+  color: #344054;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.pagination .next {
+  width: 88px;
+  height: 36px;
+  color: #344054;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.pagination .numbering span {
+  color: #091e42;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 10px;
+  margin: 0 5px;
+}
+.numbering .active {
+  /* display: none; */
+  width: 40px;
+  height: 40px;
+  gap: 0px;
+  border-radius: 8px;
+  background: #eff1f4;
+}
