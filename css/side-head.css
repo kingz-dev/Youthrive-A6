@@ -57,8 +57,22 @@ body {
   color: #6a1039;
 }
 
+a {
+  text-decoration: none;
+}
+
 .sidebar nav ul {
   list-style: none;
+}
+
+.sidebar nav ul li:hover {
+  margin: 22px 0 0px -20px;
+  background-color: #ca530f;
+  width: 184px;
+  height: 36px;
+  padding: 8px 20px 8px 18px;
+  border-radius: 18px;
+  color: #f7e8ef;
 }
 
 .sidebar .mList {

@@ -1,0 +1,114 @@
+.sidebar nav ul li.active {
+    margin: 22px 0 0px -20px;
+  }
+
+.sidebar .empty {
+  width: 100%;
+  min-height: 80vh;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eff1f4;
+}
+.sidebar .logout {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #091e42;
+  width: 148px;
+  height: 20px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-size: 13px;
+  font-weight: 400;
+  background-color: #fff;
+  cursor: pointer;
+}
+.content .btn-primary.roles-change {
+  width: 130px;
+}
+
+.jobSection {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  margin: 0px 50px 30px 50px;
+}
+
+.jobSection .card {
+  max-width: 538px;
+  min-height: 289px;
+  border-radius: 15px;
+  border: 1px solid #eff1f4;
+  padding: 20px 25px;
+}
+
+.card .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+}
+.card .head p {
+  color: #091e42;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24.59px;
+}
+
+.card .text {
+  color: #667085;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19.12px;
+  padding-bottom: 10px;
+}
+
+.card .jobs {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 10px;
+}
+
+.card .jobs .mpe {
+  color: #091e42;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  padding: 2px 8px;
+  border-radius: 16px;
+  background-color: #f5f6f7;
+}
+
+.card .jobs .design {
+  color: #6a1039;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  padding: 2px 8px;
+  border-radius: 16px;
+  background-color: #f7e8ef;
+}
+
+.card .manager {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  gap: 20px;
+}
+
+.card .manager .james {
+  color: #0e2354;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.card .manager .title {
+  color: #909dad;
+  font-size: 12px;
+  font-weight: 200;
+  line-height: 22px;
+}
+.card .manager .arrow {
+  padding-left: 20px;
+}
