@@ -1,6 +1,6 @@
 .sidebar nav ul li.active {
-    margin: 22px 0 0px -20px;
-  }
+  margin: 22px 0 0px -20px;
+}
 
 .sidebar .empty {
   width: 100%;
@@ -111,4 +111,121 @@
 }
 .card .manager .arrow {
   padding-left: 20px;
+}
+
+/* modal section */
+.mclose {
+  margin-right: -30px;
+  margin-bottom: 0px;
+  text-align: right;
+}
+
+.modal {
+  background-color: #ffffff;
+  width: 526px;
+  height: 620px;
+  padding: 20px 40px 62px 40px;
+  border-radius: 12px;
+  box-shadow: 0px 8px 8px -4px #10182808;
+  border: 1px solid #6a1039;
+}
+
+.modal .case {
+  padding-bottom: 20px;
+}
+.modal .asTitle {
+  color: #15294b;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.modal .asText {
+  color: #667085;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  padding-bottom: 25px;
+}
+.modal .asText span {
+  color: #6a1039;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.modal .mSearch {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 446px;
+  height: 45px;
+  padding: 10px 14px 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #eff1f4;
+}
+
+.modal input[type="text"] {
+  padding-left: 5px;
+  min-width: 300px;
+  border: none;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.12px;
+  color: #333333;
+}
+
+.asCard {
+  width: 446px;
+  height: 360px;
+  border-radius: 10px;
+  border: 1px solid #f5f6f7;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+.asCard .checked {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 424px;
+  height: 60px;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  margin-bottom: 10px;
+  border: 1px solid #f5f6f7;
+}
+
+.asCard .checked.active {
+  background-color: #fff2ea;
+}
+
+.asCard .checked .itemflex {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.checked p {
+  color: #091e42;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 20px;
+}
+.checked .check {
+  color: #6a1039;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.checked .uncheck {
+  color: #091e42;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
 }

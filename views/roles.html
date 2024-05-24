@@ -13,9 +13,12 @@
     />
     <link rel="stylesheet" href="../css/side-head.css" />
     <link rel="stylesheet" href="../css/roles.css" />
+    <link rel="stylesheet" href="../css/overlay.css" />
   </head>
   <body>
     <div class="container">
+      
+
       <!-- Side Menu -->
       <aside class="sidebar">
         <div class="companyId">
@@ -27,39 +30,47 @@
         <nav>
           <ul>
             <a href="">
-                <li class="mList">
-                    <img src="../images/dashboard-icon.svg" alt="" />
-                    <p>Dashboard</p>
-                  </li>
+              <li class="mList">
+                <img src="../images/dashboard-icon.svg" alt="" />
+                <p>Dashboard</p>
+              </li>
             </a>
             <a href="./roles.html">
-                <li class="mList  active">
-                    <img src="../images/roles-case.svg" alt="" />
-                    <p>Roles</p>
-                  </li>
+              <li class="mList active">
+                <img src="../images/roles-case.svg" alt="" />
+                <p>Roles</p>
+              </li>
             </a>
-            <a href="../index.html"><li class="mList">
+            <a href="../index.html"
+              ><li class="mList">
                 <img src="../images/employees-icon.svg" alt="" />
                 <p>Employees</p>
-              </li></a>
-            <a href="#"><li class="mList">
+              </li></a
+            >
+            <a href="#"
+              ><li class="mList">
                 <img src="../images/payrol-icon.svg" alt="" />
                 <p>Payroll</p>
-              </li></a>
-            <a href="#"><li class="mList">
+              </li></a
+            >
+            <a href="#"
+              ><li class="mList">
                 <img src="../images/reports-icon.svg" alt="" />
                 <p>Reports</p>
-              </li></a>
-            <a href="#"><li class="mList">
+              </li></a
+            >
+            <a href="#"
+              ><li class="mList">
                 <img src="../images/settings-icon.svg" alt="" />
                 <p>Settings</p>
-              </li></a>
+              </li></a
+            >
           </ul>
         </nav>
         <div class="empty"></div>
         <button class="logout">
-            <img class="logout-icon" src="../images/Logout.svg" alt="">
-            <p>Log out</p>
+          <img class="logout-icon" src="../images/Logout.svg" alt="" />
+          <p>Log out</p>
         </button>
       </aside>
 
@@ -132,108 +143,213 @@
 
         <!-- job Category  -->
         <div class="comCategory">
-            <div class="allCat">
-              <p class="pCategory allEmployee">All</p>
-              <p class="pCategory">Products</p>
-              <p class="pCategory">Engineering</p>
-              <p class="pCategory">Marketing</p>
-              <p class="pCategory">Recruitment</p>
-              <p class="pCategory">Sales</p>
-              <p class="pCategory">Cusromer service</p>
-            </div>
-            <hr class="hr" />
+          <div class="allCat">
+            <p class="pCategory allEmployee">All</p>
+            <p class="pCategory">Products</p>
+            <p class="pCategory">Engineering</p>
+            <p class="pCategory">Marketing</p>
+            <p class="pCategory">Recruitment</p>
+            <p class="pCategory">Sales</p>
+            <p class="pCategory">Cusromer service</p>
           </div>
+          <hr class="hr" />
+        </div>
+
+        <!-- backdrop -->
+      <div id="backdrop"></div>
+        
+        <!-- Modal Section -->
+        <div class="mContainer">
+
+          <div class="mclose"><img src="../images/modal-close.svg" alt="" /></div>
+          <div class="modal">
+            <img class="case" src="../images/modal-case-icon.svg" alt="" />
+            <p class="asTitle">Assign this role</p>
+            <p class="asText">Select one or multiple employees to assign to this role <span>“Senior Design Lead “</span></p>
+            <div class="mSearch">
+              <div>
+                <img class="searchIcon" src="../images/modal-search.svg" alt="" />
+              <input type="text" placeholder="Search anything here" />
+              </div>
+              <img src="../images/Help icon.svg" alt="" />
+            </div>
+
+            <div class="asCard">
+
+              <div class="checked unchecked active">
+                <div class="itemflex">
+                  <img src="../images/1mjl.png" alt="" />
+                  <div>
+                    <p>Jennifer Lopez</p>
+                    <p class="check">Product Designer, Integrations</p>
+                  </div>
+                </div>
+                <img src="../images/mChecked.svg" alt="" />
+              </div>
+
+              <div class="checked unchecked">
+                <div class="itemflex">
+                  <img src="../images/2mto.png" alt="" />
+                  <div>
+                    <p>Tassy Omah </p>
+                    <p class="uncheck">Developer Relations, Payments</p>
+                  </div>
+                </div>
+                <img src="../images/mUnchecked.svg" alt="" />
+              </div>
+
+              <div class="checked unchecked">
+                <div class="itemflex">
+                  <img src="../images/3mew.png" alt="" />
+                  <div>
+                    <p>Emeto winner </p>
+                    <p class="uncheck">Backend Developer, Payments</p>
+                  </div>
+                </div>
+                <img src="../images/mUnchecked.svg" alt="" />
+              </div>
+
+              <div class="checked unchecked">
+                <div class="itemflex">
+                  <img src="../images/4mjm.png" alt="" />
+                  <div>
+                    <p>Jane mena </p>
+                    <p class="uncheck">Technical specialist, Enterprise</p>
+                  </div>
+                </div>
+                <img src="../images/mUnchecked.svg" alt="" />
+              </div>
+
+              <div class="checked unchecked">
+                <div class="itemflex">
+                  <img src="../images/5mkm.png" alt="" />
+                  <div>
+                    <p>Kate Magnamay</p>
+                    <p class="uncheck">Product Manger, Dashboard</p>
+                  </div>
+                </div>
+                <img src="../images/mUnchecked.svg" alt="" />
+              </div>
+
+            </div>
+          </div>
+        </div>
 
         <!-- Job sections -->
-          <div class="jobSection">
-            <div class="card">
-                <div class="head">
-                    <p>Solution Sales Specailist</p>
-                    <img src="../images/soluton-sales-avatar.png" alt="">
-                </div>
-                <p class="text">Responsible for driving revenue growth by identifying and pursuing new business opportunities, as well as maintaining relationships with existing clients. working closely with customers to understand their needs and provide solutions that meet or exceed their expectations, while also achieving the company's sales goals.</p>
-                <div class="jobs">
-                    <p class="mpe">Marketing</p>
-                    <p class="mpe">Products</p>
-                    <p class="mpe">Engineering</p>
-                    <p class="design">Design</p>
-                </div>
-                <div class="manager">
-                    <img src="../images/James campion.svg" alt="">
-                    <div>
-                        <p class="james">James campion</p>
-                        <p class="title">Manager</p>
-                    </div>
-                    <img class="arrow" src="../images/arrow-right.svg" alt="">
-                </div>
+        <div class="jobSection">
+          <div class="card">
+            <div class="head">
+              <p>Solution Sales Specailist</p>
+              <img src="../images/soluton-sales-avatar.png" alt="" />
             </div>
-
-            <div class="card">
-                <div class="head">
-                    <p>Solution Sales Specailist</p>
-                    <img src="../images/soluton-sales-avatar.png" alt="">
-                </div>
-                <p class="text">Responsible for driving revenue growth by identifying and pursuing new business opportunities, as well as maintaining relationships with existing clients. working closely with customers to understand their needs and provide solutions that meet or exceed their expectations, while also achieving the company's sales goals.</p>
-                <div class="jobs">
-                    <p class="mpe">Marketing</p>
-                    <p class="mpe">Products</p>
-                    <p class="mpe">Engineering</p>
-                    <p class="design">Design</p>
-                </div>
-                <div class="manager">
-                    <img src="../images/James campion.svg" alt="">
-                    <div>
-                        <p class="james">James campion</p>
-                        <p class="title">Manager</p>
-                    </div>
-                    <img class="arrow" src="../images/arrow-right.svg" alt="">
-                </div>
+            <p class="text">
+              Responsible for driving revenue growth by identifying and pursuing
+              new business opportunities, as well as maintaining relationships
+              with existing clients. working closely with customers to
+              understand their needs and provide solutions that meet or exceed
+              their expectations, while also achieving the company's sales
+              goals.
+            </p>
+            <div class="jobs">
+              <p class="mpe">Marketing</p>
+              <p class="mpe">Products</p>
+              <p class="mpe">Engineering</p>
+              <p class="design">Design</p>
             </div>
-
-            <div class="card">
-                <div class="head">
-                    <p>Solution Sales Specailist</p>
-                    <img src="../images/soluton-sales-avatar.png" alt="">
-                </div>
-                <p class="text">Responsible for driving revenue growth by identifying and pursuing new business opportunities, as well as maintaining relationships with existing clients. working closely with customers to understand their needs and provide solutions that meet or exceed their expectations, while also achieving the company's sales goals.</p>
-                <div class="jobs">
-                    <p class="mpe">Marketing</p>
-                    <p class="mpe">Products</p>
-                    <p class="mpe">Engineering</p>
-                    <p class="design">Design</p>
-                </div>
-                <div class="manager">
-                    <img src="../images/James campion.svg" alt="">
-                    <div>
-                        <p class="james">James campion</p>
-                        <p class="title">Manager</p>
-                    </div>
-                    <img class="arrow" src="../images/arrow-right.svg" alt="">
-                </div>
+            <div class="manager">
+              <img src="../images/James campion.svg" alt="" />
+              <div>
+                <p class="james">James campion</p>
+                <p class="title">Manager</p>
+              </div>
+              <img class="arrow" src="../images/arrow-right.svg" alt="" />
             </div>
-
-            <div class="card">
-                <div class="head">
-                    <p>Solution Sales Specailist</p>
-                    <img src="../images/soluton-sales-avatar.png" alt="">
-                </div>
-                <p class="text">Responsible for driving revenue growth by identifying and pursuing new business opportunities, as well as maintaining relationships with existing clients. working closely with customers to understand their needs and provide solutions that meet or exceed their expectations, while also achieving the company's sales goals.</p>
-                <div class="jobs">
-                    <p class="mpe">Marketing and sales</p>
-                </div>
-                <div class="manager">
-                    <img src="../images/James campion.svg" alt="">
-                    <div>
-                        <p class="james">James campion</p>
-                        <p class="title">Manager</p>
-                    </div>
-                    <img class="arrow" src="../images/arrow-right.svg" alt="">
-                </div>
-            </div>
-
-
           </div>
-        
+
+          <div class="card">
+            <div class="head">
+              <p>Solution Sales Specailist</p>
+              <img src="../images/soluton-sales-avatar.png" alt="" />
+            </div>
+            <p class="text">
+              Responsible for driving revenue growth by identifying and pursuing
+              new business opportunities, as well as maintaining relationships
+              with existing clients. working closely with customers to
+              understand their needs and provide solutions that meet or exceed
+              their expectations, while also achieving the company's sales
+              goals.
+            </p>
+            <div class="jobs">
+              <p class="mpe">Marketing</p>
+              <p class="mpe">Products</p>
+              <p class="mpe">Engineering</p>
+              <p class="design">Design</p>
+            </div>
+            <div class="manager">
+              <img src="../images/James campion.svg" alt="" />
+              <div>
+                <p class="james">James campion</p>
+                <p class="title">Manager</p>
+              </div>
+              <img class="arrow" src="../images/arrow-right.svg" alt="" />
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="head">
+              <p>Solution Sales Specailist</p>
+              <img src="../images/soluton-sales-avatar.png" alt="" />
+            </div>
+            <p class="text">
+              Responsible for driving revenue growth by identifying and pursuing
+              new business opportunities, as well as maintaining relationships
+              with existing clients. working closely with customers to
+              understand their needs and provide solutions that meet or exceed
+              their expectations, while also achieving the company's sales
+              goals.
+            </p>
+            <div class="jobs">
+              <p class="mpe">Marketing</p>
+              <p class="mpe">Products</p>
+              <p class="mpe">Engineering</p>
+              <p class="design">Design</p>
+            </div>
+            <div class="manager">
+              <img src="../images/James campion.svg" alt="" />
+              <div>
+                <p class="james">James campion</p>
+                <p class="title">Manager</p>
+              </div>
+              <img class="arrow" src="../images/arrow-right.svg" alt="" />
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="head">
+              <p>Solution Sales Specailist</p>
+              <img src="../images/soluton-sales-avatar.png" alt="" />
+            </div>
+            <p class="text">
+              Responsible for driving revenue growth by identifying and pursuing
+              new business opportunities, as well as maintaining relationships
+              with existing clients. working closely with customers to
+              understand their needs and provide solutions that meet or exceed
+              their expectations, while also achieving the company's sales
+              goals.
+            </p>
+            <div class="jobs">
+              <p class="mpe">Marketing and sales</p>
+            </div>
+            <div class="manager">
+              <img src="../images/James campion.svg" alt="" />
+              <div>
+                <p class="james">James campion</p>
+                <p class="title">Manager</p>
+              </div>
+              <img class="arrow" src="../images/arrow-right.svg" alt="" />
+            </div>
+          </div>
+        </div>
       </main>
     </div>
   </body>
