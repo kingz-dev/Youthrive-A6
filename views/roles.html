@@ -17,8 +17,6 @@
   </head>
   <body>
     <div class="container">
-      
-
       <!-- Side Menu -->
       <aside class="sidebar">
         <div class="companyId">
@@ -101,7 +99,7 @@
             <p class="pTxt">123</p>
           </div>
           <div class="buttons">
-            <button class="btn">
+            <button id="assign-btn" class="btn">
               <img src="../images/new-employee-icon.svg" alt="" /> Assign
             </button>
             <button class="btn btn-primary roles-change">
@@ -125,7 +123,7 @@
             <img src="../images/search-icon.png" alt="" />
             <input
               type="text"
-              placeholder="Search Employee by name, role, ID or any related keywords"
+              placeholder="Search Roles by Title, Teams or any related keywords"
             />
           </div>
           <div class="buttons">
@@ -156,26 +154,33 @@
         </div>
 
         <!-- backdrop -->
-      <div id="backdrop"></div>
-        
-        <!-- Modal Section -->
-        <div class="mContainer">
+        <div id="backdrop"></div>
 
-          <div class="mclose"><img src="../images/modal-close.svg" alt="" /></div>
+        <!-- Modal Section -->
+        <div id="assign-overlay" class="mContainer">
+          <div class="mclose">
+            <img src="../images/modal-close.svg" alt="" />
+          </div>
           <div class="modal">
             <img class="case" src="../images/modal-case-icon.svg" alt="" />
             <p class="asTitle">Assign this role</p>
-            <p class="asText">Select one or multiple employees to assign to this role <span>“Senior Design Lead “</span></p>
+            <p class="asText">
+              Select one or multiple employees to assign to this role
+              <span>“Senior Design Lead “</span>
+            </p>
             <div class="mSearch">
               <div>
-                <img class="searchIcon" src="../images/modal-search.svg" alt="" />
-              <input type="text" placeholder="Search anything here" />
+                <img
+                  class="searchIcon"
+                  src="../images/modal-search.svg"
+                  alt=""
+                />
+                <input type="text" placeholder="Search anything here" />
               </div>
               <img src="../images/Help icon.svg" alt="" />
             </div>
 
             <div class="asCard">
-
               <div class="checked unchecked active">
                 <div class="itemflex">
                   <img src="../images/1mjl.png" alt="" />
@@ -191,7 +196,7 @@
                 <div class="itemflex">
                   <img src="../images/2mto.png" alt="" />
                   <div>
-                    <p>Tassy Omah </p>
+                    <p>Tassy Omah</p>
                     <p class="uncheck">Developer Relations, Payments</p>
                   </div>
                 </div>
@@ -202,7 +207,7 @@
                 <div class="itemflex">
                   <img src="../images/3mew.png" alt="" />
                   <div>
-                    <p>Emeto winner </p>
+                    <p>Emeto winner</p>
                     <p class="uncheck">Backend Developer, Payments</p>
                   </div>
                 </div>
@@ -213,7 +218,7 @@
                 <div class="itemflex">
                   <img src="../images/4mjm.png" alt="" />
                   <div>
-                    <p>Jane mena </p>
+                    <p>Jane mena</p>
                     <p class="uncheck">Technical specialist, Enterprise</p>
                   </div>
                 </div>
@@ -230,7 +235,6 @@
                 </div>
                 <img src="../images/mUnchecked.svg" alt="" />
               </div>
-
             </div>
           </div>
         </div>
@@ -352,5 +356,7 @@
         </div>
       </main>
     </div>
+    <script src="../js/functions.js"></script>
+    <script src="../js/app.js"></script>
   </body>
 </html>

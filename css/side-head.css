@@ -10,7 +10,6 @@ body {
   display: flex;
   max-height: 160vh;
   font-family: "Inter", sans-serif;
-  
 }
 
 .container {
@@ -269,7 +268,7 @@ header .user-profile img {
   align-items: center;
   margin: 0 50px 20px 50px;
   padding: 10px 10px 10px 15px;
-  border: 1px solid #EFEFEF;
+  border: 1px solid #efefef;
   border-radius: 7px;
 }
 
@@ -309,7 +308,7 @@ header .user-profile img {
   height: 40px;
   padding: 10px 16px 10px 16px;
   border-radius: 8px;
-  border: 1px solid #EFEFEF;
+  border: 1px solid #efefef;
   font-size: 14px;
   font-weight: 400;
   background-color: #fff;
@@ -320,12 +319,12 @@ header .user-profile img {
   margin-left: 10px;
   width: 40px;
   height: 40px;
-  background-color: #EFEFEF;
-  border: 1px solid #EFEFEF;
+  background-color: #efefef;
+  border: 1px solid #efefef;
 }
 
 .filterApp .grid {
   width: 40px;
   height: 40px;
-  border: 1px solid #EFEFEF;
+  border: 1px solid #efefef;
 }
